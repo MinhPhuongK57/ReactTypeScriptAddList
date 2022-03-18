@@ -18,7 +18,7 @@ export interface IState{
 
 export default function App() {
 
-  const[items, setItems] = useState<IState["items"]>([{name: "The Vinh", age:21, description: "Developer"}])
+  const[items, setItems] = useState<IState["items"]>([{name: "Minh Phuong", age:21, description: "Developer"}])
 
   return (
     <div className="container">
