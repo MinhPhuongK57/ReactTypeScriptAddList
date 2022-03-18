@@ -1,0 +1,14 @@
+.list__information {
+    width: 100%;
+    max-width: 40%;
+
+    &--title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #56A6FF;
+    }
+
+    &--content {
+        font-size: 1.8rem;
+    }
+}

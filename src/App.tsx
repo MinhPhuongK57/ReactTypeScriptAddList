@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import FormInput from './containers/form-input/FormInput'
+import ListInformation from './containers/list-information/ListInformation'
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+//.. const[items, setItems] = useState()...
+
+
+//Export
+export interface IState{
+  items:{
+    name:string,
+    age: number,
+    description:string
+  }[]
 }
 
-export default App;
+export default function App() {
+
+  const[items, setItems] = useState<IState["items"]>([{name: "The Vinh", age:21, description: "Developer"}])
+
+  return (
+    <div className="container">
+      {/*
+        Add items => Component
+        setItems = setItems
+      */}
+      <FormInput items={items} setItems={setItems}/>
+
+      {/*Add items => Component*/}
+      <ListInformation items={items}/>
+    </div>
+  )
+}

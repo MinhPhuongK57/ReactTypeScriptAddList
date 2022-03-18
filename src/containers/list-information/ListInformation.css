@@ -1,0 +1,12 @@
+.list__information {
+  width: 100%;
+  max-width: 40%;
+}
+.list__information--title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #56A6FF;
+}
+.list__information--content {
+  font-size: 1.8rem;
+}/*# sourceMappingURL=ListInformation.css.map */

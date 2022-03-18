@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To be able to run the project
+
+1: npm install (node_modules)
+2: npm install node-sass sass
+3: npm start (Start running the project on the website)
+
 ## Available Scripts
 
 In the project directory, you can run:

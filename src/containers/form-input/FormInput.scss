@@ -1,0 +1,51 @@
+.form__input {
+    width: 100%;
+    max-width: 40%;
+
+    &--title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #56A6FF;
+    }
+
+    &--content {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        input,
+        button,
+        textarea {
+
+            font-size: inherit;
+            font-family: inherit;
+            display: block;
+        }
+
+        input,
+        textarea {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #fff;
+            color: coral;
+            font-weight: bold;
+            padding: 1rem;
+            border: 2px solid coral;
+            border-radius: 0.4rem;
+            transition: all 0.3s linear;
+
+            &:hover {
+                background-color: coral;
+                color: #fff;
+                transition: all 0.3s linear;
+            }
+        }
+    }
+}
